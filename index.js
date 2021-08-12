@@ -50,7 +50,10 @@ const burger = {
   category: "Lunch", 
   
 }
-
+burger.discount = function (status){
+  return status.toLowerCase() === 'teacher'|| status.toLowerCase() === 'student'?this.price * .75 : this.price * .9;
+}
+console.log('Task 2: ', burger.discount('director'));
 
 
 ///////////////Reviews (MVP)///////////////////
