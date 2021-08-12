@@ -116,11 +116,14 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
+function getReviewByIndex(array, indexNumber) {
   /*Your code here*/
+  let reviewer = array[indexNumber];
+  let result = `${reviewer.name} gave the restaurant a ${reviewer.rating} star review, and their feedback was: ${reviewer.feedback}`
+  return result;
 }
 
-
+console.log('TASK 6: ', getReviewByIndex(reviews,0));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -135,10 +138,13 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
+function getLastReview(objArray) {
   /*Your code here*/
+  let last = objArray[objArray.length-1];
+  let resultMsg = `${last.name} gave the restaurant a ${last.rating} star review, and their feedback was: ${last.feedback}`
+  return resultMsg;
 } 
-
+console.log('TASK 7: ', getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
